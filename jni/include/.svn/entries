@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   name=""
+   repos="https://svn.gz.cvte.cn/IDB"
+   revision="38508"
+   last-author="yanglixia"
+   uuid="b631bd8f-ff78-4a39-810c-f903b248d175"
+   url="https://svn.gz.cvte.cn/IDB/Projects/SeewoLink/Android/Codes/Mainline/SeewoLink2.0/LibSeewoLink/jni/include"
+   committed-rev="19583"
+   kind="dir"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="libavcodec"
+   kind="dir"/>
+<entry
+   name="libavdevice"
+   kind="dir"/>
+<entry
+   name="libavfilter"
+   kind="dir"/>
+<entry
+   name="libavformat"
+   kind="dir"/>
+<entry
+   name="libavutil"
+   kind="dir"/>
+<entry
+   name="libswresample"
+   kind="dir"/>
+<entry
+   name="libswscale"
+   kind="dir"/>
+</wc-entries>

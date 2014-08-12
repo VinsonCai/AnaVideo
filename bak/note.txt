@@ -1,0 +1,8 @@
+
+
+
+javah -classpath bin/classes  -d jni -jni @classNames.txt
+
+
+
+

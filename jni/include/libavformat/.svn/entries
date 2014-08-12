@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   name=""
+   repos="https://svn.gz.cvte.cn/IDB"
+   revision="38508"
+   last-author="yanglixia"
+   uuid="b631bd8f-ff78-4a39-810c-f903b248d175"
+   url="https://svn.gz.cvte.cn/IDB/Projects/SeewoLink/Android/Codes/Mainline/SeewoLink2.0/LibSeewoLink/jni/include/libavformat"
+   committed-rev="19583"
+   kind="dir"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="._avformat.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:13.538000Z"/>
+<entry
+   name="._avio.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:13.532000Z"/>
+<entry
+   name="._version.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:13.564000Z"/>
+<entry
+   name="avformat.h"
+   checksum="1bb294f023be0f444ad13773f6213e81"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="avio.h"
+   checksum="e553596870b67c62a6c3aa50f0f7c3fb"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="version.h"
+   checksum="2f4d0930b7ccba68eff5f1c9f0bd3d1f"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+</wc-entries>

@@ -1,0 +1,16 @@
+static const char* FRAG_SHADER =  
+	"precision mediump float;\n"
+    "varying lowp vec2 tc;\n"  
+    "uniform sampler2D SamplerY;\n"  
+    "uniform sampler2D SamplerU;\n"  
+    "uniform sampler2D SamplerV;\n"  
+    "void main(void)\n"  
+    "{\n"  
+		"vec4 c = vec4((texture2D(SamplerY, tc).r - 16.0/255.0) * 1.164);\n"
+		"vec4 U = vec4(texture2D(SamplerU, tc).r - 128.0/255.0);\n"
+		"vec4 V = vec4(texture2D(SamplerV, tc).r - 128.0/255.0);\n"
+		"c += V * vec4(1.596, -0.813, 0, 0);\n"
+		"c += U * vec4(0, -0.392, 2.017, 0);\n"
+		"c.a = 1.0;\n"
+		"gl_FragColor = c;\n"
+ 	"}\n";

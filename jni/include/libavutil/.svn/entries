@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   name=""
+   repos="https://svn.gz.cvte.cn/IDB"
+   revision="38508"
+   last-author="yanglixia"
+   uuid="b631bd8f-ff78-4a39-810c-f903b248d175"
+   url="https://svn.gz.cvte.cn/IDB/Projects/SeewoLink/Android/Codes/Mainline/SeewoLink2.0/LibSeewoLink/jni/include/libavutil"
+   committed-rev="19583"
+   kind="dir"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="._adler32.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:14.745000Z"/>
+<entry
+   name="._aes.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:14.314000Z"/>
+<entry
+   name="._attributes.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:14.726000Z"/>
+<entry
+   name="._audio_fifo.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:14.786000Z"/>
+<entry
+   name="._audioconvert.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:14.644000Z"/>
+<entry
+   name="._avassert.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:14.427000Z"/>
+<entry
+   name="._avstring.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:14.631000Z"/>
+<entry
+   name="._avutil.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:14.298000Z"/>
+<entry
+   name="._base64.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:14.563000Z"/>
+<entry
+   name="._blowfish.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:14.531000Z"/>
+<entry
+   name="._bprint.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:14.757000Z"/>
+<entry
+   name="._bswap.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:14.661000Z"/>
+<entry
+   name="._channel_layout.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:14.796000Z"/>
+<entry
+   name="._common.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:14.609000Z"/>
+<entry
+   name="._cpu.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:14.582000Z"/>
+<entry
+   name="._crc.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:14.808000Z"/>
+<entry
+   name="._dict.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:14.373000Z"/>
+<entry
+   name="._error.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:14.618000Z"/>
+<entry
+   name="._eval.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:14.246000Z"/>
+<entry
+   name="._fifo.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:14.556000Z"/>
+<entry
+   name="._file.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:14.202000Z"/>
+<entry
+   name="._hmac.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:14.320000Z"/>
+<entry
+   name="._imgutils.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:14.278000Z"/>
+<entry
+   name="._intfloat.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:14.537000Z"/>
+<entry
+   name="._intfloat_readwrite.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:14.731000Z"/>
+<entry
+   name="._intreadwrite.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:14.769000Z"/>
+<entry
+   name="._lfg.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:14.814000Z"/>
+<entry
+   name="._log.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:14.671000Z"/>
+<entry
+   name="._lzo.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:14.304000Z"/>
+<entry
+   name="._mathematics.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:14.454000Z"/>
+<entry
+   name="._md5.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:14.241000Z"/>
+<entry
+   name="._mem.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:14.354000Z"/>
+<entry
+   name="._old_pix_fmts.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:14.587000Z"/>
+<entry
+   name="._opt.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:14.286000Z"/>
+<entry
+   name="._parseutils.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:14.625000Z"/>
+<entry
+   name="._pixdesc.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:14.763000Z"/>
+<entry
+   name="._pixfmt.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:14.650000Z"/>
+<entry
+   name="._random_seed.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:14.226000Z"/>
+<entry
+   name="._rational.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:14.821000Z"/>
+<entry
+   name="._samplefmt.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:14.432000Z"/>
+<entry
+   name="._sha.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:14.525000Z"/>
+<entry
+   name="._time.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:14.449000Z"/>
+<entry
+   name="._timecode.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:14.738000Z"/>
+<entry
+   name="._timestamp.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:14.781000Z"/>
+<entry
+   name="._version.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:14.394000Z"/>
+<entry
+   name="._xtea.h"
+   checksum="d31248b37756906b051e0021bfaca537"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"
+   prop-time="2014-05-20T00:54:14.479000Z"/>
+<entry
+   name="adler32.h"
+   checksum="505cb758adeb306d6ff1d82f03866783"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="aes.h"
+   checksum="e8db198ab8d731dc87db15b9d547540e"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="attributes.h"
+   checksum="bbade7a25b67387892d82f1ae3157d31"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="audio_fifo.h"
+   checksum="168f6ed0a6e05570f327012466fdfad3"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="audioconvert.h"
+   checksum="d5d5fbc1abae9141c7078952f39c0536"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="avassert.h"
+   checksum="87d1e50af8185623e7534e26a16e26fb"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="avconfig.h"
+   checksum="c3e23a321e693caa3e42fe45b831ea4f"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="avstring.h"
+   checksum="b683965deccfd91872135f4d89dbed50"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="avutil.h"
+   checksum="640e7f109d2780f9b8ed69cb637342e8"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="base64.h"
+   checksum="6cf3b4804967ddce66c5bd50d3534b49"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="blowfish.h"
+   checksum="d4b6e43938ae2353a001e65f08530f0c"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="bprint.h"
+   checksum="20cc2211e6e7fc015b245152f508e91d"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="bswap.h"
+   checksum="9a6b194990735e969a4a7453451a5579"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="channel_layout.h"
+   checksum="1e36fa0ffabc23567b208777ff78a1bd"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="common.h"
+   checksum="85c1ae79139e49dfc30efc0c1116d019"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="cpu.h"
+   checksum="0134f743229750fa0185b92728191a0e"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="crc.h"
+   checksum="3c6f8bd78c9735205ef7ba631d8d1744"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="dict.h"
+   checksum="6f0bde26dda94a9c9410733f9981e324"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="error.h"
+   checksum="57254164a8c39cfd3b8fff571a9310b9"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="eval.h"
+   checksum="c02536dd84cfb09d751f59068c9db768"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="fifo.h"
+   checksum="153fb69ef1c2798f9ef570105599cdb7"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="file.h"
+   checksum="5820e2dbdc5e84fadd80e132403b33de"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="hmac.h"
+   checksum="f5c9e2454b8e94f6989c6b531424b557"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="imgutils.h"
+   checksum="8199b3211865461ea299f661b571d0a0"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="intfloat.h"
+   checksum="7925e39c9796d04ba1017d4a72f70b0a"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="intfloat_readwrite.h"
+   checksum="f3beb9ed1d69e791a6dc292933d4b02a"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="intreadwrite.h"
+   checksum="d89cd817ca505f03a798b9032ca8a4c3"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="lfg.h"
+   checksum="cd26349e48af76e315ff492ddadb94e7"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="log.h"
+   checksum="befac788793aa3671eb3037503b9364e"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="lzo.h"
+   checksum="5ae67d1184069b5aaadc2eaaa1429927"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="mathematics.h"
+   checksum="f4f7085a1d38b4f8b03fcccd36cbbbc5"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="md5.h"
+   checksum="9802a0be23aff876d1a6ccb80f5fa413"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="mem.h"
+   checksum="d1448b7bd7818e3ac005b8242b7b9eaa"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="old_pix_fmts.h"
+   checksum="434a50ec37384e2c13e00e408072920e"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="opt.h"
+   checksum="e8df576ff69799235475370923aa96a4"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="parseutils.h"
+   checksum="044b3251346293e1acd34f047d3f28b4"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="pixdesc.h"
+   checksum="25dbb19f01e0204feb668290d4adfe8d"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="pixfmt.h"
+   checksum="3540afe2bd63393b8cfacbae402b9023"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="random_seed.h"
+   checksum="f6fea558e1c930b274aa7ff8122cbec7"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="rational.h"
+   checksum="b57461d90df292665d84217582c7e9c9"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="samplefmt.h"
+   checksum="87cc83f266e45c86e600078f964896b0"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="sha.h"
+   checksum="c01a1100b171ab458b9babd1ba5eaf0b"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="time.h"
+   checksum="be34aaa47b16742a49d01f1f82b182f3"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="timecode.h"
+   checksum="22ff6f4ecdaab2be36b93571d2ab9587"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="timestamp.h"
+   checksum="ce3c53b6b01eafac9a25374493315286"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="version.h"
+   checksum="e2719775049caa80d207e11011d3210f"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+<entry
+   name="xtea.h"
+   checksum="f7daf49bc1a1352945f169d316cc77e8"
+   last-author="yanglixia"
+   text-time="2013-06-18T09:29:55.713000Z"
+   committed-rev="19583"
+   kind="file"
+   committed-date="2013-06-18T09:29:55.713206Z"/>
+</wc-entries>

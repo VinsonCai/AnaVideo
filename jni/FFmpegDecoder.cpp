@@ -63,7 +63,7 @@ void* audio_thread(void *arg) {
 			//重采样得到AV_SAMPLE_FMT_S16格式 (AV_SAMPLE_FMT_S16P->AV_SAMPLE_FMT_S16)
 			if (aCodecCtx->sample_fmt != AV_SAMPLE_FMT_S16) {
 				if (is->swrContext) {
-					//					swr_free(&swrContext);
+					swr_free(&is->swrContext);
 				}
 				int64_t dec_channel_layout =
 						(frame->channel_layout && av_frame_get_channels(frame) == av_get_channel_layout_nb_channels(frame->channel_layout)) ?
@@ -92,6 +92,10 @@ void* audio_thread(void *arg) {
 					int data_size = frame->linesize[0] = ret * av_get_bytes_per_sample(AV_SAMPLE_FMT_S16) * out_channels;
 					frame->pts = av_frame_get_best_effort_timestamp(frame);
 					frame->pts = frame->pts*av_q2d(is->audio_st->time_base)*1000;
+					int len = data_size%8;
+					if (len!= 0) {
+						data_size = data_size-len+8;
+					}
 					unsigned char * buffer = (unsigned char *) malloc(data_size);
 					memcpy(buffer, out[0],data_size);
 					AVRational tb = {1, frame->sample_rate};
@@ -107,6 +111,8 @@ void* audio_thread(void *arg) {
 					} else {
 						mPlayerManager->insert_audio(buffer, data_size, frame->pts);
 					}
+					av_free(frame);
+//					free(buffer);
 				}
 			}
 		}
@@ -129,7 +135,9 @@ void* video_thread(void *arg) {
 	den = streamRational.den;  //分母
 	fps = (double) num/den;
 	int numBytes=avpicture_get_size(PIX_FMT_RGB565, is->rgb_width, is->rgb_height);
-	buffer=(uint8_t *)av_malloc(numBytes*sizeof(uint8_t));
+	if (buffer == NULL) {
+		buffer=(uint8_t *)av_malloc(numBytes*sizeof(uint8_t));
+	}
 
 	struct SwsContext *sws_ctx =
 			sws_getContext(
@@ -169,6 +177,8 @@ void* video_thread(void *arg) {
 			pFrameRGB->pts = frame->pts;
 			mPlayerManager->insert_video(pFrameRGB);
 		}
+		av_free(frame);
+		frame = NULL;
 		av_free_packet(&pkt);
 	}
 	the_end:

@@ -47,18 +47,19 @@ public:
 	static AudioPlay *m_pInstance;
 public:
 	AudioPlay(void);
-		~AudioPlay(void);
-		static AudioPlay *GetInstance()
-		{
-			if (m_pInstance == NULL) {
-				m_pInstance = new AudioPlay;
-			}
-			return m_pInstance;
+	~AudioPlay(void);
+	static AudioPlay *GetInstance()
+	{
+		if (m_pInstance == NULL) {
+			m_pInstance = new AudioPlay;
 		}
-
+		return m_pInstance;
+	}
+	void init_audio();
 	void createEngine();
 	void createBufferQueueAudioPlayer(int rate, int channel);
 	void audio_write(const void*buffer, int size);
 	void audio_play(unsigned char* buffer, int data_size, int64_t pts);
 	int64_t get_audio();
+
 };

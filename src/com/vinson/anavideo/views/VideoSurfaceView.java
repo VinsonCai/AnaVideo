@@ -1,18 +1,20 @@
 package com.vinson.anavideo.views;
 
 import java.nio.ByteBuffer;
+import java.util.ArrayList;
 
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;
 import android.graphics.Canvas;
 import android.graphics.Color;
+import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.graphics.Paint.Style;
 import android.graphics.Path;
 import android.os.Environment;
 import android.util.AttributeSet;
-import android.util.Log;
+import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceHolder.Callback;
 import android.view.SurfaceView;
@@ -23,16 +25,21 @@ public class VideoSurfaceView extends SurfaceView {
 	private static final String TAG = "VideoSurfaceView";
 	private static final int WIDTH = 1920;
 	private static final int HEIGHT = 1080;
-	private static final String PATH = Environment.getExternalStorageDirectory().getAbsolutePath() + "/a1.mp4";
+	private static final String PATH = Environment.getExternalStorageDirectory().getAbsolutePath() + "/Music/a.mp4";
 	private DrawingThread mDrawingThread;
-	private static final int VIDEO_WIDTH = 1280;
-	private static final int VIDEO_HEIGHT = 720;
+	private static final int VIDEO_WIDTH = 400;
+	private static final int VIDEO_HEIGHT = 300;
 	byte[] mPixel = new byte[VIDEO_WIDTH * VIDEO_HEIGHT * 2];
 	ByteBuffer mBuffer = ByteBuffer.wrap(mPixel);
 	Bitmap mVideoBit = Bitmap.createBitmap(VIDEO_WIDTH, VIDEO_HEIGHT, Config.RGB_565);
 	private Path mFrontPath;
 	private Path mBackgroundPath;
 	private Paint mPaint;
+	private Matrix matrix = new Matrix();
+
+	private ArrayList<Path> mPaths = new ArrayList<Path>();
+	private Path mCurrentPath;
+	private final static Object LOCKER = new Object();
 
 	public VideoSurfaceView(Context context, AttributeSet attrs, int defStyle) {
 		super(context, attrs, defStyle);
@@ -67,6 +74,38 @@ public class VideoSurfaceView extends SurfaceView {
 		mPaint.setStyle(Style.STROKE);
 	}
 
+	@Override
+	public boolean onTouchEvent(MotionEvent event) {
+
+		int action = event.getAction();
+		float x = event.getX();
+		float y = event.getY();
+
+		switch (action) {
+		case MotionEvent.ACTION_DOWN:
+			mCurrentPath = new Path();
+			mCurrentPath.moveTo(x, y);
+			break;
+
+		case MotionEvent.ACTION_MOVE:
+			mCurrentPath.lineTo(x, y);
+
+			break;
+		case MotionEvent.ACTION_UP:
+			mCurrentPath.lineTo(x, y);
+			synchronized (LOCKER) {
+				mPaths.add(mCurrentPath);
+			}
+			mCurrentPath = null;
+			break;
+
+		default:
+			break;
+		}
+
+		return true;
+	}
+
 	private void initView() {
 		buildPath();
 		SurfaceHolder holder = getHolder();
@@ -90,6 +129,8 @@ public class VideoSurfaceView extends SurfaceView {
 
 		mDrawingThread = new DrawingThread();
 		mDrawingThread.start();
+
+		matrix.setScale(2.5f, 2.5f);
 	}
 
 	private void onDestroy() {
@@ -116,8 +157,20 @@ public class VideoSurfaceView extends SurfaceView {
 					canvas.drawColor(Color.WHITE);
 					canvas.drawPath(mBackgroundPath, mPaint);
 //					Log.e("lisa", mVideoBit.getWidth()+"...");
-					canvas.drawBitmap(mVideoBit, 0, 0, null);
+//					canvas.drawBitmap(mVideoBit, 0, 0, null);
+					canvas.drawBitmap(mVideoBit, matrix, null);
 					canvas.drawPath(mFrontPath, mPaint);
+
+					synchronized (LOCKER) {
+						for (Path path : mPaths) {
+							canvas.drawPath(path, mPaint);
+						}
+					}
+
+					if (null != mCurrentPath) {
+						canvas.drawPath(mCurrentPath, mPaint);
+					}
+
 					getHolder().unlockCanvasAndPost(canvas);
 //					Log.v(TAG, "after draw bitmap:" + System.currentTimeMillis());
 				} else {

@@ -30,10 +30,11 @@ int PlayerManager::init_player() {
 }
 
 int PlayerManager::init_audio(int sample_rate, int channel) {
+	audioPlay->init_audio();
 	audioPlay->createEngine();
 	first = true;
 	mute = false;
-	audioPlay->createBufferQueueAudioPlayer(44100, 2);
+	audioPlay->createBufferQueueAudioPlayer(sample_rate, channel);
 }
 
 int PlayerManager::init_video(int video_width, int video_height) {
@@ -49,7 +50,6 @@ int PlayerManager::insert_video(AVFrame* pFrame) {
 }
 
 int PlayerManager::insert_audio(unsigned char* buffer, int data_size, int64_t pts) {
-	LOGD("inset audio,,,,,,,,,,,,,,,");
 	if (first) {
 		audioPlay->audio_write(buffer, data_size);
 		audioPlay->audio_pts = pts;

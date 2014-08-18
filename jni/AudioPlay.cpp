@@ -6,6 +6,7 @@ AudioPlay *AudioPlay::m_pInstance = NULL;
 
 
 AudioPlay::AudioPlay(void) {
+	audio_buffer = NULL;
 }
 
 AudioPlay::~AudioPlay(void) {
@@ -13,7 +14,7 @@ AudioPlay::~AudioPlay(void) {
 }
 // this callback handler is called every time a buffer finishes playing
 void bqPlayerCallback(SLAndroidSimpleBufferQueueItf bq, void *context) {
-	LOGD("cal back................");
+	LOGD("callback.............");
 	AudioPlay *mAudioPlay = AudioPlay::GetInstance();
 	mAudioPlay->get_audio();
 }
@@ -29,6 +30,7 @@ int64_t AudioPlay::get_audio() {
 	audio_pts = audioInfo.pkt_pts;
 	if (audio_buffer) {
 		free(audio_buffer);
+		audio_buffer = NULL;
 	}
 	audio_buffer = audioInfo.data;
 	(*bqPlayerBufferQueue)->Enqueue(bqPlayerBufferQueue, audio_buffer, audioInfo.data_size);
@@ -47,9 +49,13 @@ void AudioPlay::audio_play(unsigned char* buffer, int data_size, int64_t pts) {
 	pthread_mutex_unlock(&audio_mutex);
 }
 
-void AudioPlay::createEngine() {
+void AudioPlay::init_audio() {
 	pthread_mutex_init (&audio_mutex, NULL);
 	pthread_cond_init (&audio_cond, NULL);
+	audio_buffer = NULL;
+}
+
+void AudioPlay::createEngine() {
 
 	SLresult result;
 
@@ -110,8 +116,8 @@ void AudioPlay::createBufferQueueAudioPlayer(int rate, int channel) {
 	format_pcm.containerSize = SL_PCMSAMPLEFORMAT_FIXED_16;
 	if( channel == 2 ) {
 		format_pcm.channelMask = SL_SPEAKER_FRONT_LEFT | SL_SPEAKER_FRONT_RIGHT;
-//	} else if(channel==6) {
-//		format_pcm.channelMask = KSAUDIO_SPEAKER_5POINT1;
+		//	} else if(channel==6) {
+		//		format_pcm.channelMask = KSAUDIO_SPEAKER_5POINT1;
 	} else {
 		format_pcm.channelMask = SL_SPEAKER_FRONT_CENTER;
 	}

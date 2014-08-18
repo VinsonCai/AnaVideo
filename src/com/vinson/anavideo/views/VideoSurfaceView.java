@@ -130,7 +130,8 @@ public class VideoSurfaceView extends SurfaceView {
 		mDrawingThread = new DrawingThread();
 		mDrawingThread.start();
 
-		matrix.setScale(2.5f, 2.5f);
+		matrix.preTranslate(100, 100);
+		matrix.postScale(2.5f, 2.5f);
 	}
 
 	private void onDestroy() {

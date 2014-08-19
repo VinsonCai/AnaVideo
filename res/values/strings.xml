@@ -4,5 +4,6 @@
     <string name="app_name">AnaVideo</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="fps_rate">FPS:%1$d</string>
 
 </resources>

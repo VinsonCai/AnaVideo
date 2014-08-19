@@ -20,12 +20,17 @@ import android.view.SurfaceHolder.Callback;
 import android.view.SurfaceView;
 
 import com.lisa.testplayer.jni.LocalPlayer;
+import com.vinson.anavideo.events.FPSEvent;
+import com.vinson.anavideo.gif.GifShape;
+
+import de.greenrobot.event.EventBus;
 
 public class VideoSurfaceView extends SurfaceView {
 	private static final String TAG = "VideoSurfaceView";
 	private static final int WIDTH = 1920;
 	private static final int HEIGHT = 1080;
 	private static final String PATH = Environment.getExternalStorageDirectory().getAbsolutePath() + "/Music/a.mp4";
+	private static final String GIF_PATH = Environment.getExternalStorageDirectory().getAbsolutePath() + "/460.gif";
 	private DrawingThread mDrawingThread;
 	private static final int VIDEO_WIDTH = 400;
 	private static final int VIDEO_HEIGHT = 300;
@@ -40,6 +45,8 @@ public class VideoSurfaceView extends SurfaceView {
 	private ArrayList<Path> mPaths = new ArrayList<Path>();
 	private Path mCurrentPath;
 	private final static Object LOCKER = new Object();
+
+	private GifShape mGifShape;
 
 	public VideoSurfaceView(Context context, AttributeSet attrs, int defStyle) {
 		super(context, attrs, defStyle);
@@ -72,6 +79,10 @@ public class VideoSurfaceView extends SurfaceView {
 		mPaint.setStrokeWidth(8);
 		mPaint.setColor(Color.RED);
 		mPaint.setStyle(Style.STROKE);
+	}
+
+	private void initGifShape() {
+		mGifShape = new GifShape();
 	}
 
 	@Override
@@ -108,6 +119,7 @@ public class VideoSurfaceView extends SurfaceView {
 
 	private void initView() {
 		buildPath();
+		initGifShape();
 		SurfaceHolder holder = getHolder();
 		holder.addCallback(new Callback() {
 
@@ -120,6 +132,8 @@ public class VideoSurfaceView extends SurfaceView {
 			public void surfaceCreated(SurfaceHolder holder) {
 				LocalPlayer.open(PATH);
 				LocalPlayer.initTranslate(VIDEO_WIDTH, VIDEO_HEIGHT);
+
+				mGifShape.decode(GIF_PATH);
 			}
 
 			@Override
@@ -139,6 +153,8 @@ public class VideoSurfaceView extends SurfaceView {
 			mDrawingThread.stopDrawing();
 			mDrawingThread = null;
 		}
+
+		mGifShape.destroy();
 	}
 
 	private class DrawingThread extends Thread {
@@ -149,9 +165,17 @@ public class VideoSurfaceView extends SurfaceView {
 		public void run() {
 			super.run();
 			mRunningDrawing = true;
+
+			int fps = 0;
+			FPSEvent event = new FPSEvent();
+			long start = System.currentTimeMillis();
 			while (mRunningDrawing) {
+
+				long beforeLock = System.currentTimeMillis();
+
 				int ret = LocalPlayer.translateColor(mPixel);
 				if (ret != -1) {
+					fps++;
 					Canvas canvas = getHolder().lockCanvas(null);
 					mVideoBit.copyPixelsFromBuffer(mBuffer);
 					mBuffer.position(0);
@@ -172,7 +196,17 @@ public class VideoSurfaceView extends SurfaceView {
 						canvas.drawPath(mCurrentPath, mPaint);
 					}
 
+					mGifShape.drawSelf(canvas);
+
 					getHolder().unlockCanvasAndPost(canvas);
+
+					long end = System.currentTimeMillis();
+					if (end - start > 1000) {
+						start = end;
+						event.mFpsCount = fps;
+						fps = 0;
+						EventBus.getDefault().post(event);
+					}
 //					Log.v(TAG, "after draw bitmap:" + System.currentTimeMillis());
 				} else {
 					try {

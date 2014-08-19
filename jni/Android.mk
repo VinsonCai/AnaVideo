@@ -41,3 +41,8 @@ LOCAL_LDLIBS    += -landroid
 
 include $(BUILD_SHARED_LIBRARY)
 include $(all-subdir-makefiles)
+
+
+include $(CLEAR_VARS)
+
+
